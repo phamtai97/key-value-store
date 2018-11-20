@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>BTree.h</itemPath>
+      <itemPath>BTreeNode.h</itemPath>
+      <itemPath>BTreeNodeStore.h</itemPath>
+      <itemPath>BTreeNodeStore_impl.h</itemPath>
+      <itemPath>BTreeNode_impl.h</itemPath>
+      <itemPath>BTreeStore.h</itemPath>
+      <itemPath>BTreeStore_impl.h</itemPath>
+      <itemPath>BTree_impl.h</itemPath>
+      <itemPath>BytesDataInputStore.h</itemPath>
+      <itemPath>BytesDataOutputStore.h</itemPath>
+      <itemPath>Comparetor.h</itemPath>
+      <itemPath>DataInput.h</itemPath>
+      <itemPath>DataOutput.h</itemPath>
+      <itemPath>Entry.h</itemPath>
+      <itemPath>HandlePackage.h</itemPath>
+      <itemPath>KeyValueStore.h</itemPath>
+      <itemPath>ManageFile.h</itemPath>
+      <itemPath>ManageFileRead.h</itemPath>
+      <itemPath>ManageFileWrite.h</itemPath>
+      <itemPath>Printer.h</itemPath>
+      <itemPath>ReadWriteLock.h</itemPath>
+      <itemPath>Serialization.h</itemPath>
+      <itemPath>Server.h</itemPath>
+      <itemPath>SocketClient.h</itemPath>
+      <itemPath>ThreadPool.h</itemPath>
+      <itemPath>Worker.h</itemPath>
+      <itemPath>datasettest.txt</itemPath>
+      <itemPath>header.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>BytesDataInputStore.cpp</itemPath>
+      <itemPath>BytesDataOutputStore.cpp</itemPath>
+      <itemPath>DataInput.cpp</itemPath>
+      <itemPath>DataOutput.cpp</itemPath>
+      <itemPath>ManageFileRead.cpp</itemPath>
+      <itemPath>ManageFileWrite.cpp</itemPath>
+      <itemPath>Printer.cpp</itemPath>
+      <itemPath>Server.cpp</itemPath>
+      <itemPath>SocketClient.cpp</itemPath>
+      <itemPath>StringStringComparator.cpp</itemPath>
+      <itemPath>ThreadPool.cpp</itemPath>
+      <itemPath>Worker.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <stripSymbols>true</stripSymbols>
+          <standard>8</standard>
+          <commandLine>-pthread -lboost_system -lboost_thread</commandLine>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/include/boost</pElem>
+          </linkerAddLib>
+        </linkerTool>
+      </compileType>
+      <item path="BTree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BTreeNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BTreeNodeStore.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BTreeNodeStore_impl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BTreeNode_impl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BTreeStore.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BTreeStore_impl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BTree_impl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BytesDataInputStore.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BytesDataInputStore.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BytesDataOutputStore.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BytesDataOutputStore.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Comparetor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataInput.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataInput.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataOutput.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataOutput.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Entry.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="HandlePackage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KeyValueStore.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ManageFile.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ManageFileRead.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ManageFileRead.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ManageFileWrite.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ManageFileWrite.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Printer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Printer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ReadWriteLock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Serialization.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Server.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SocketClient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SocketClient.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="StringStringComparator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ThreadPool.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ThreadPool.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Worker.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Worker.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datasettest.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+          <commandLine>-pthread</commandLine>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/include/boost</pElem>
+          </linkerAddLib>
+        </linkerTool>
+      </compileType>
+      <item path="BTree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BTreeNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BTreeNodeStore.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BTreeNodeStore_impl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BTreeNode_impl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BTreeStore.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BTreeStore_impl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BTree_impl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BytesDataInputStore.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BytesDataInputStore.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BytesDataOutputStore.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BytesDataOutputStore.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Comparetor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataInput.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataInput.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataOutput.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataOutput.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Entry.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="HandlePackage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KeyValueStore.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ManageFile.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ManageFileRead.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ManageFileRead.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ManageFileWrite.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ManageFileWrite.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Printer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Printer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ReadWriteLock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Serialization.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Server.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SocketClient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SocketClient.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="StringStringComparator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ThreadPool.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ThreadPool.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Worker.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Worker.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="datasettest.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
