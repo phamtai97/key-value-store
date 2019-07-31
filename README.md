@@ -1,4 +1,12 @@
-![1_V2zU24JMyIuCKV3wkDN26A](/content/images/2018/11/1_V2zU24JMyIuCKV3wkDN26A.png)
+## Implement Key-value store by BTree
+<div align="center">
+	<img src="./images/overview.png" width="400">
+	<br/>
+	<span align="center">
+		<i></i>
+	</span>
+</div>
+<br/>
 
 ## Introduction
 
@@ -49,7 +57,15 @@ So **what's B-Tree related here?** Does using the B-Tree structure reduce this c
 Moreover, there is a data structure that can solve the problem of reducing disk accesses: [B+Tree](https://en.wikipedia.org/wiki/B%2B_tree). The B+Tree is a modification of the b-tree that stores data only in leaf nodes, minimizing search cost in the common and worst case, and (optionally) links together all the leaf nodes in a linked list, optimizing ordered access. B+ trees are extensively used in both database and file systems because of the efficiency they provide to store and retrieve data from external memory.
 
 ## About B-Tree
-![Screenshot-from-2018-11-13-10-21-36](/content/images/2018/11/Screenshot-from-2018-11-13-10-21-36.png)
+
+<div align="center">
+	<img src="./images/btree.png">
+	<br/>
+	<span align="center">
+		<i></i>
+	</span>
+</div>
+<br/>
 
 In computer science, a B-Tree is a self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions is logarithmic time. The B-tree is a generalization of a [binary search tree](https://en.wikipedia.org/wiki/Binary_search_tree) in that a node can have more than two children.
 
@@ -135,7 +151,14 @@ processing to the next step. The B-Tree structure you can refer to [here](https:
 
 In this section I will talk about how to store data on disk. First of all i define the file structure for storing data on disk. The file structure database is as follows:
 
-![Screenshot-from-2018-11-13-10-32-19](/content/images/2018/11/Screenshot-from-2018-11-13-10-32-19.png)
+<div align="center">
+	<img src="./images/file.png" width="300">
+	<br/>
+	<span align="center">
+		<i></i>
+	</span>
+</div>
+<br/>
 
 In order to store data of B-Tree on file, I has to change the B-Tree structure a bit like this:
 ```cpp
@@ -181,23 +204,16 @@ The technique i use in this section is the basic method of accessing a file is v
 At the end of implementing, I would like to introduce the server-client architecture.
 The following is the image of architecture.
 
-![Screenshot-from-2018-11-13-10-37-43](/content/images/2018/11/Screenshot-from-2018-11-13-10-37-43.png)
+<div align="center">
+	<img src="./images/server.png" width="400">
+	<br/>
+	<span align="center">
+		<i></i>
+	</span>
+</div>
+<br/>
 
 The client will connect to the server and call API. The server handle Api based on api that B-Tree Store provided.
-
-I measured server performance with locust:
-- Test API Set Key-Value:
-
-![Screenshot-from-2018-11-13-10-39-07](/content/images/2018/11/Screenshot-from-2018-11-13-10-39-07.png)
-
-- Test API Get Key-Value
-
-![Screenshot-from-2018-11-13-10-39-45](/content/images/2018/11/Screenshot-from-2018-11-13-10-39-45.png)
-
-- Test API Remove Key-Value:
-
-![Screenshot-from-2018-11-13-10-40-13](/content/images/2018/11/Screenshot-from-2018-11-13-10-40-13.png)
-
 
 I have a idea that we can cache position of entry or node to help increase the performance of the Key-Value Store. But we have to solve the problem of data consistency.
 
@@ -297,17 +313,6 @@ This look like older version, but that fields BTreeNode child[2t] was removed. T
 So when we restart server, we no need to rebuild tree structure, we just read tree metadata file, it contain root position and next position. We use this node to figure out all node we need.
 
 This is repo of the second way implement: https://gitlab.zalopay.vn/thuyenpt/key-value-store
-## Benchmark 
-
-![Screenshot-from-2018-11-16-10-09-54](/content/images/2018/11/Screenshot-from-2018-11-16-10-09-54.png)
-
-![Screenshot-from-2018-11-13-10-58-58](/content/images/2018/11/Screenshot-from-2018-11-13-10-58-58.png)
-
-![Screenshot-from-2018-11-13-11-00-39](/content/images/2018/11/Screenshot-from-2018-11-13-11-00-39.png)
-
-![Screenshot-from-2018-11-13-11-00-57](/content/images/2018/11/Screenshot-from-2018-11-13-11-00-57.png)
-
-You can refer to [here](https://docs.google.com/spreadsheets/d/1o2KSnFgpuMn6X082iNuHzBpQ0vqll_NVGTO9-tReYh8/edit#gid=462477626) 
 
 ## Issues surrounding the Key-Value store by B-Tree
 
